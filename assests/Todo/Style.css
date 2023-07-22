@@ -1,0 +1,204 @@
+body{
+    font-family: 'Bebas Neue', cursive;
+  background-image: url(background.png);
+ background-size:cover;
+ background-repeat:no-repeat;
+height:100%;
+ box-sizing: content-box;
+ width: 99%;
+}
+.title:hover{
+    color:gold;
+    transition: 0.8s;
+    cursor: pointer;
+
+}
+header{
+    font-size: 61px;
+    margin-left: 15px;
+}
+p{
+    margin: 0%;
+    color: white;
+    
+}
+.add{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.insert{
+    border:none;
+    width: 520px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.insert:focus{
+    outline: none;
+   background-color: rgba(255, 255, 255, 0.055);
+   color: white;
+   transition: 0.9s;
+   border-bottom: 1px solid white;
+}
+.insert:focus.insert::placeholder{
+    color: white;
+}
+.insert::placeholder{
+    color: black;
+    font-size: 15px;
+}
+.plus{
+    margin-left: 10px;
+    width: 60px;
+    height: 40px;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    font-size: 29px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.plus:hover{
+    color:#1e1e1e;
+    background-color: white;
+    transition: 0.9s;
+     
+}
+
+.button{
+    background: transparent;
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.button:nth-child(1):hover{
+   
+    background-color: green;
+     transition: 0.9s;
+     color: wheat;
+     
+}
+.button:nth-child(2):hover{
+    
+    background-color: red;
+     transition: 0.9s;
+    
+     
+}
+.button:nth-child(3):hover{
+   
+    background-color: orangered;
+     transition: 0.9s;
+    
+     
+}
+.buttonc{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    width: 20%;
+    height: 10%;
+    margin-top: -3%; 
+}
+p{
+    width: 80%;
+    text-justify: inter-word;
+    text-align: justify;
+}
+.task-container{
+    background:rgba(0, 0, 0, 0.7);
+    padding-top: 30px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    border-radius:15px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+     transition: 0.8s;
+}
+.task-container:hover{
+    background-color:rgba(0, 0, 0, 0.555); ;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.wraper{
+    width: 870px;
+    margin:auto;
+    padding: 3%;
+    border-radius: 20PX;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 50px;
+  
+}
+.check{
+    text-decoration: line-through;
+    text-decoration-color: antiquewhite;
+    text-decoration-thickness: 1.5px ;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+       
+}
+.checkbg{
+     background-color: rgba(0, 128, 0, 0.7);
+    transition: 0.8s;
+}
+.checkbg:hover{
+
+ background-color: green;
+    transition: 0.8s;
+}
+
+.deleteall{
+width: 40px;
+position: relative;
+height: 40px;
+left: 97%;
+border-radius: 8PX;
+margin-top: -2%;
+vertical-align: top;
+background-color: rgb(253, 18, 18);
+color: white;
+font-size: 18px;
+padding: auto;
+text-align: center;
+cursor: pointer;
+margin-bottom: 12PX;
+border: none;
+}
+.deleteall:hover{
+    background-color: rgb(248, 51, 16);
+    transition: 0.6s;
+}
+
+.edittask{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    color: white;
+    width: 80%;
+    height: 150PX;
+   scroll-behavior: smooth;
+     font-family: 'Bebas Neue', cursive;
+resize: none;}
+.edited{
+  
+    background-color: rgba(255, 68, 0, 0.699);
+}
+.edited:hover{
+      background-color: orangered;
+}
+.width-cont{
+     width:80%;
+}

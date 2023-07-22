@@ -1,0 +1,48 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assests/images/logo12.svg">
+    <link rel="stylesheet" href="thankyou.css">
+    <title>Thank you!</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="assests/images/Happy Birthday Confetti.mp4" type="video/mp4">
+
+    </video>
+    <div class="content">
+        <div class="animation_wraper postion up">
+            <div class="animation">
+                <div class="avatar" id="avatar"></div>
+            </div>
+
+        </div>
+        <h1 class="up">Thank you for getting in touch! <br>We will contact you as soon as possible.
+        </h1>
+        <a href="home.html" class="up">
+            <button class="button">home page</button>
+        </a>
+    </div>
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+.avatar {
+            width: 20rem;
+            border-radius: 50%;
+            user-select: none;
+            background-image: url("assests/images/animation/avatar.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+            height: 20.3rem;
+
+        }
+
+        @font-face {
+            font-family: opensans;
+            src: url(assests/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+        }
+
+        .animation_wraper {
+            align-self: normal;
+            margin-top: 15rem;
+            background-image: url(assests/images/avatar_bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            user-select: none;
+            align-self: center;
+
+        }
+
+        .avatar {
+            animation: idle 2s infinite alternate ease-in-out;
+            transform: translateY(-0.35rem);
+
+        }
+
+        @keyframes idle {
+            from {
+                background-position-y: 0rem;
+            }
+
+            to {
+                background-position-y: 0.6rem;
+                transform: translateY(-0.4rem);
+            }
+
+        }
+
+        .animation {
+            border-radius: 50%;
+            height: 10rem;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+  html,body{
+         overflow-x: hidden;
+    }
+        body {
+            background-color: black;
+           
+           position: relative;
+            overflow-x: hidden;
+            /* Hide scrollbars */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            overflow-y: scroll;
+            /* Add the ability to scroll */
+            overflow-x: hidden;
+           
+           
+        }
+
+        h1 {
+            align-self: center;
+            font-family: opensans;
+            color: white;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .content{
+            display: grid;  
+            grid-template-columns: auto;  
+            grid-template-rows: auto auto;
+            justify-content: center;
+            align-items: center;
+                min-height: 100%;
+            min-width: 100%;
+            
+            
+        }
+        #myVideo {
+            position: absolute;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100VH;
+        
+           
+        }
+        .up{
+            align-self: center;
+            justify-self: center;
+        }
+
+        .button {
+            background-color: rgb(18, 18, 18);
+            border: none;
+            outline: none;
+            font-size: larger;
+            text-transform: capitalize;
+            cursor: pointer;
+            height: 5rem;
+            color: white;
+            width: 15rem;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 00.4s;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: rgb(18, 18, 18);
+            transition: 00.4s;
+
+        }
+           @media (max-width: 992px) {
+       #myVideo{
+        top: -0.1rem;
+    }
+           }
+  @media (max-width: 768px) { 
+        #myVideo{
+        top: -1rem;
+    }
+  }
+  @media (max-width: 640px) {
+     #myVideo{
+        top: -2rem;
+       
+    }
+    
+  }
+
+     
+@media (max-width: 485px){
+  
+  .content{
+    scale: 0.8;
+   transform: translateY(-10rem);
+  }
+      #myVideo{
+      scale: 1.5;
+      top: -5rem;
+      
+      overflow-x: hidden;
+       
+    }
+    
+}
+@media (max-width: 360px){
+    h1{
+        font-size: larger;
+    }
+       #myVideo{
+      scale: 1.8;
+      top: -5rem;
+      
+      overflow-x: hidden;
+       
+    }
+}
