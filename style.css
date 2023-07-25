@@ -1753,7 +1753,42 @@ margin-bottom: 0px;
     position:absolute;
   }
 }
+@media (min-width:361px) and (max-width: 427px){
+    .links{
 
+  gap: 1.8rem;
+}
+ .hi_text{
+font-size: x-large;
+        margin-left: -1rem;
+ }
+
+ #welcome{
+    font-size: 16pt;
+    margin-left: 2rem;
+ }
+ .buttons{
+    margin-left:2rem;
+ }
+   form{
+    transform: scale(0.8);
+
+    }
+    #ani{
+         position: absolute;
+        left:10rem;
+        bottom: 30rem;
+
+  }
+  .icons{
+    gap: 0.9rem;
+    scale: 0.9;
+  }
+  .about_container p{
+    width: 100vw;
+
+  }
+} 
 /* xs */
 @media (max-width: 485px) {
 .links{
